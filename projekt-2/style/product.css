@@ -1,0 +1,14 @@
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-container img {
+  width: 30%;
+}
+
+.product-container .desc {
+  font-size: 1.5rem;
+  text-align: center;
+}
