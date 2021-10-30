@@ -5,11 +5,27 @@ main .desc {
   margin-bottom: 4rem;
 }
 
+main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main nav .nav-img {
+  flex-basis: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main nav .nav-img img {
+  width: 100%;
+}
+
 main nav ul li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
