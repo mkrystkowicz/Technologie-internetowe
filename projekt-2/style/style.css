@@ -26,6 +26,12 @@ header .logo {
   margin: 60px 0 20px -120px;
 }
 
+@media (max-width: 700px) {
+  header .logo {
+    margin-left: 0;
+  }
+}
+
 header .slogan {
   align-self: flex-end;
   color: saddlebrown;
