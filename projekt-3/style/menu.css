@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-basis: 20%;
+  height: 300px;
+}
+
+.menu .menu-item .title {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.menu .menu-item img {
+  width: 100%;
+}
