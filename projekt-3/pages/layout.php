@@ -1,4 +1,6 @@
-<?php $page = $params['page'] ?? 'index' ?>
+<?php $page = $params['page'] ?? 'index';
+$type = $params['menuType'] ?? 'index';
+$products = $products ?? []; ?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -19,14 +21,14 @@
 <body>
   <header>
     <div class="container">
-      <a href="/"> <img src="../assets/logo.png" alt="logo" class="logo" /></a>
+      <a href="/?menuType=index"> <img src="../assets/logo.png" alt="logo" class="logo" /></a>
       <div class="slogan">
         <q>Z naszym jedzeniem poczujesz sie jak w domu.</q>
       </div>
     </div>
   </header>
   <main>
-    <?php require_once("pages/${page}.php"); ?>
+    <?php require_once("pages/${type}.php"); ?>
   </main>
   <footer>
     <div class="container">
@@ -39,10 +41,10 @@
       </div>
       <div class="col site-map">
         <p class="title">Mapa witryny:</p>
-        <p><a href="/">Strona główna</a></p>
-        <p><a href="?page=appetizer">Przystawki</a></p>
-        <p><a href="?page=main-dish">Dania główne</a></p>
-        <p><a href="?page=drinks">Koktajle i inne napoje</a></p>
+        <p><a href="/?menuType=index">Strona główna</a></p>
+        <p><a href="?page=appetizers&menuType=list">Przystawki</a></p>
+        <p><a href="?page=main-dishes&menuType=list">Dania główne</a></p>
+        <p><a href="?page=drinks&menuType=list">Koktajle i inne napoje</a></p>
       </div>
     </div>
   </footer>

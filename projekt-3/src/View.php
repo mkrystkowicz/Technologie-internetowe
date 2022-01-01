@@ -6,11 +6,8 @@ namespace App;
 
 class View
 {
-  public array $params;
-
-  public function render(array $params = []): void
+  public function render(array $params = [], array $products): void
   {
     require_once("pages/layout.php");
-    $this->params = $params;
   }
 }
