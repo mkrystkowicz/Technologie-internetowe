@@ -128,3 +128,40 @@ footer .title {
   margin: 0 20px;
 }
 
+.cart-products {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 1.2rem;
+  height: 40vh;
+  overflow-y: scroll;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px dashed saddlebrown;
+}
+
+.cart-item-image {
+  max-width: 100px;
+}
+
+.cart-item-image img {
+  width: 100%;
+}
+
+.cart-item-text {
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.cart-total-price {
+  font-size: 2rem;
+}

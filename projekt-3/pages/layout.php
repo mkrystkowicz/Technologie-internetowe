@@ -21,7 +21,7 @@ $products = $products ?? []; ?>
 <body>
   <header>
     <div class="container">
-      <a href="/?menuType=index"> <img src="../assets/logo.png" alt="logo" class="logo" /></a>
+      <a href="/?menuType=index"><img src=" ../assets/logo.png" alt="logo" class="logo" /></a>
       <div class="slogan">
         <q>Z naszym jedzeniem poczujesz sie jak w domu.</q>
       </div>
