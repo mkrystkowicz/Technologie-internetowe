@@ -18,7 +18,7 @@ class PageController extends DatabaseController
     $this->pageInit($request, $config);
   }
 
-  public function render()
+  private function render()
   {
     $this->view->render($this->params, $this->products, $this->cartId);
   }
@@ -34,5 +34,7 @@ class PageController extends DatabaseController
     if ($this->cartId === null) {
       $this->cartId = (new CartController)->getCartId();
     }
+
+    $this->render();
   }
 }

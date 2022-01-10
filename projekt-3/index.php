@@ -15,4 +15,4 @@ require_once('src/Utlls/debug.php');
 
 $dbConfig = getConfig();
 
-(new PageController($_REQUEST, $dbConfig))->render();
+(new PageController($_REQUEST, $dbConfig));

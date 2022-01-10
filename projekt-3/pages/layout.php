@@ -21,7 +21,7 @@ $products = $products ?? []; ?>
 <body>
   <header>
     <div class="container">
-      <a href="/?menuType=index"><img src=" ../assets/logo.png" alt="logo" class="logo" /></a>
+      <a href="/?menuType=index&cartId=<?php echo $cartId ?>"><img src=" ../assets/logo.png" alt="logo" class="logo" /></a>
       <div class="slogan">
         <q>Z naszym jedzeniem poczujesz sie jak w domu.</q>
       </div>
@@ -41,10 +41,10 @@ $products = $products ?? []; ?>
       </div>
       <div class="col site-map">
         <p class="title">Mapa witryny:</p>
-        <p><a href="/?menuType=index">Strona główna</a></p>
-        <p><a href="?page=appetizers&menuType=list">Przystawki</a></p>
-        <p><a href="?page=main-dishes&menuType=list">Dania główne</a></p>
-        <p><a href="?page=drinks&menuType=list">Koktajle i inne napoje</a></p>
+        <p><a href="/?menuType=index&cartId=<?php echo $cartId ?>">Strona główna</a></p>
+        <p><a href="?page=appetizers&menuType=list&cartId=<?php echo $cartId ?>">Przystawki</a></p>
+        <p><a href="?page=main-dishes&menuType=list&cartId=<?php echo $cartId ?>">Dania główne</a></p>
+        <p><a href="?page=drinks&menuType=list&cartId=<?php echo $cartId ?>">Koktajle i inne napoje</a></p>
       </div>
     </div>
   </footer>
