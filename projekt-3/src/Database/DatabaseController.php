@@ -94,4 +94,26 @@ abstract class DatabaseController
       echo "0 results";
     }
   }
+
+  public function placeOrder(array $order): void
+  {
+    if (!$order) {
+      return;
+    }
+
+    $cartId = $order['cartId'];
+    $name = $order['name'];
+    $street = $order['street'];
+    $city = $order['city'];
+    $number = $order['number'];
+    $email = $order['email'];
+
+    $sql = "INSERT INTO `orders` (cartId, name, street, city, number, email) 
+    VALUES ('$cartId', '$name', '$street', '$city', '$number', '$email')";
+    $result = mysqli_query($this->conn, $sql);
+
+    if ($result == 1) {
+      echo "Zamowienie zostało wysłane";
+    }
+  }
 }

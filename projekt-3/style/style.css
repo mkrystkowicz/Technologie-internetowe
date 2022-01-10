@@ -165,3 +165,32 @@ footer .title {
 .cart-total-price {
   font-size: 2rem;
 }
+
+.order-container {
+  display: flex;
+}
+
+.cart-container {
+  flex-basis: 100%;
+}
+
+.order-form {
+  flex-basis: 100%;
+  margin: 0 10px;
+}
+
+.input-container {
+  margin: 10px 0;
+}
+
+.input-container input {
+  background-color: saddlebrown;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.input-container label {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
