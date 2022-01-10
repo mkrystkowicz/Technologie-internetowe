@@ -23,25 +23,25 @@ abstract class DatabaseController
   {
     if (!$products) {
       return [];
-    }
-
-    $sql = "SELECT * FROM `$products`";
-    $result = $this->conn->query($sql);
-
-    if ($result->num_rows > 0) {
-      $arr = [];
-      while ($row = $result->fetch_assoc()) {
-        $arr[] = [
-          'id' => $row['id'],
-          'title' => $row['title'],
-          'photo' => $row['photo'],
-          'description' => $row['description'],
-          'price' => $row['price'],
-        ];
-      }
-      return $arr;
+    } else if ($products === 'index') {
+      return [];
     } else {
-      echo "0 results";
+      $sql = "SELECT * FROM `$products`";
+      $result = $this->conn->query($sql);
+
+      if ($result->num_rows > 0) {
+        $arr = [];
+        while ($row = $result->fetch_assoc()) {
+          $arr[] = [
+            'id' => $row['id'],
+            'title' => $row['title'],
+            'photo' => $row['photo'],
+            'description' => $row['description'],
+            'price' => $row['price'],
+          ];
+        }
+        return $arr;
+      }
     }
   }
 
@@ -59,9 +59,9 @@ abstract class DatabaseController
   {
     $sql = "SELECT * FROM `cart` WHERE `cart_id` = '$cartId'";
     $result = $this->conn->query($sql);
+    $arr = [];
 
     if ($result->num_rows > 0) {
-      $arr = [];
       while ($row = $result->fetch_assoc()) {
         $arr[] = [
           'cartId' => $row['cart_id'],
@@ -69,10 +69,9 @@ abstract class DatabaseController
           'productId' => $row['product_id'],
         ];
       }
-      return $arr;
-    } else {
-      echo "0 results";
     }
+
+    return $arr;
   }
 
   public function getProduct(string $category, string $productId): array

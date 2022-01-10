@@ -41,10 +41,10 @@ foreach ($cart as $key => $value) {
         <p>
           <?php echo $product['description'] ?>
         </p>
-        <p><?php echo $product['price']; ?></p>
+        <p><?php echo $product['price']; ?>zł</p>
       </div>
     </li>
   <?php endforeach; ?>
 </ul>
-<p class="cart-total-price">Cena łącznie: <?php echo $totalPrice ?></p>
+<p class="cart-total-price">Cena łącznie: <?php echo $totalPrice ?>zł</p>
 <a href="/?menuType=index&cartId=<?php echo $cartId ?>"><button class="btn">+ Dodaj produkt</button></a>
