@@ -1,0 +1,48 @@
+main .desc {
+  color: lightyellow;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main nav .nav-img {
+  flex-basis: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main nav .nav-img img {
+  width: 100%;
+}
+
+main nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+main nav ul li a {
+  border: 1px solid chocolate;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  color: chocolate;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+main nav ul li a:hover {
+  border: 1px solid chocolate;
+  background-color: chocolate;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  color: lightyellow;
+  text-decoration: none;
+}
