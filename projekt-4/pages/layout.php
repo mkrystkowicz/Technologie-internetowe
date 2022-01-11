@@ -28,6 +28,11 @@ $products = $products ?? []; ?>
     </div>
   </header>
   <main>
+    <div class="input-container">
+      <label>Szukaj</label>
+      <input class="search-input"/>
+      <div class="search-results"></div>
+    </div>
     <?php require_once("pages/${type}.php"); ?>
   </main>
   <footer>

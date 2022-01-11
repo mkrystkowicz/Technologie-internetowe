@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 10px;
   background-color: burlywood;
 }
@@ -45,7 +45,7 @@ header .slogan q {
 main {
   position: relative;
   padding: 18rem 2rem;
-  height: 70vh;
+  height: 80vh;
 }
 
 footer {
@@ -180,17 +180,30 @@ footer .title {
 }
 
 .input-container {
+  width: 220px;
   margin: 10px 0;
 }
 
-.input-container input {
+input {
   background-color: saddlebrown;
   border: none;
   padding: 5px;
   color: white;
 }
 
-.input-container label {
+label {
   font-size: 1.5rem;
-  margin-left: 5px;
+  margin: 0 5px;
+}
+
+.search-results {
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  height: 20vh;
+  transition: 0.3s ease-out;
+}
+
+.search-input:focus + .search-results {
+  opacity: 1;
 }
