@@ -1,5 +1,5 @@
 <?php $id = $params['id'];
-$cartId = $params['cartId'];
+$cartId = $params['cartId'] ?? null;
 $page = $params['page'];
 $photo = $products[$id - 1]['photo'];
 $title = $products[$id - 1]['title'];
@@ -15,6 +15,8 @@ $price = $products[$id - 1]['price'];
     <img src="<?php echo $photo ?>" alt="<?php echo $title ?>" />
     <p class="desc"><?php echo $descrition ?></p>
     <p class="desc"><?php echo $price ?>zł</p>
+    <?php if($cartId) : ?>
     <a href="/?page=<?php echo $page ?>&menuType=cart&cartId=<?php echo $cartId; ?>&productId=<?php echo $id ?>"><button class="btn">Zamów</button></a>
+    <?php endif; ?>
   </div>
 </div>

@@ -197,13 +197,35 @@ label {
 }
 
 .search-results {
-  opacity: 0;
+  display: none;
+  position: absolute;
   background-color: white;
-  width: 100%;
-  height: 20vh;
+  transition: 0.3s ease-out;
+  padding: 0.5rem;
+}
+
+.search-results.active {
+  display: block;
+}
+
+.search-result {
+  padding: 0.4rem;
+  margin: 0.4rem;
+  cursor: pointer;
+  color: saddlebrown;
   transition: 0.3s ease-out;
 }
 
-.search-input:focus + .search-results {
-  opacity: 1;
+.search-result:hover {
+  background-color: saddlebrown;
+  color: white;
+}
+
+.search-result-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.search-result-price {
+  font-size: 1rem;
 }
