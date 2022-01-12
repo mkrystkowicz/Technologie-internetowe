@@ -2,17 +2,17 @@
   "christmasDishes": [
     {
       "title": "Bigos",
-      "desc": "Pochodzenie słowa Bigos, wg Andrzeja Bańkowskiego jest niejasne.  Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos), nieco później nazywano tak potrawę z siekanego mięsa. W XVII w. słowo Bigos zaczyna oznaczać takZe posiłek przyrządzony z resztek pozostałych z poprzednich potraw.",
+      "desc": "Pochodzenie słowa „bigos”, według Andrzeja Bańkowskiego, jest niejasne.Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos, 1534), nieco później nazywano tak potrawę z siekanego mięsa (1588). W XVII w. słowo „bigos” zaczyna oznaczać także posiłek przyrządzony z resztek pozostałych z poprzednich potraw. Od XVII wieku słowo było używane również w szerszym znaczeniu jako siekanina, a w znaczeniu przenośnym mówiono: 'bigosować' w bójce, czyli: siekać na drobne kawałki (np. szablą).",
       "image": "../assets/product-images/bigos.jpeg"
     },
     {
       "title": "Pierogi",
-      "desc": "Pochodzenie słowa Bigos, wg Andrzeja Bańkowskiego jest niejasne.  Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos), nieco później nazywano tak potrawę z siekanego mięsa. W XVII w. słowo Bigos zaczyna oznaczać takZe posiłek przyrządzony z resztek pozostałych z poprzednich potraw.",
+      "desc": "Potrawa ta przywędrowała z Chin, a na ziemiach polskich pierogi pojawiły się około XIII wieku. Legenda mówi, że dotarły do nas za sprawą biskupa Jacka Odrowąża, który tak zachwycił się nimi w Kijowie, że postanowił pomysł ten przywieźć do Polski.",
       "image": "../assets/product-images/pierogi-z-kapusta-i-grzybami.jpeg"
     },
     {
       "title": "Barszcz czerwony z uszkami",
-      "desc": "Pochodzenie słowa Bigos, wg Andrzeja Bańkowskiego jest niejasne.  Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos), nieco później nazywano tak potrawę z siekanego mięsa. W XVII w. słowo Bigos zaczyna oznaczać takZe posiłek przyrządzony z resztek pozostałych z poprzednich potraw.",
+      "desc": "Specjalnie przygotowany barszcz czerwony z postnymi uszkami, będący tradycyjną polską zupą podawaną w czasie Wigilii Bożego Narodzenia. Barszcz wigilijny różni się od barszczu czerwonego przygotowywanego w ciągu roku. Jest to czysty barszcz postny, czyli przygotowany bez stosowania składników mięsnych z wyłączeniem rybnych.",
       "image": "../assets/product-images/barszcz-czerwony-z-bezglutenowymi-uszkami-orig.png"
     }
   ]
