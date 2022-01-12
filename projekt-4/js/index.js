@@ -92,3 +92,46 @@ function filteredProducts(value) {
 }
 
 renderResults(products);
+
+function fetchChristmasDishes() {
+  const url = "http://localhost:3000/christmasDishes";
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => renderChristmasDishes(data))
+    .catch((err) => {
+      const dishesContainer = document.querySelector(
+        ".christmas-dishes-container"
+      );
+
+      dishesContainer.textContent =
+        "Wymagany json-server uruchoiony na porcie 3000";
+    });
+}
+
+fetchChristmasDishes();
+
+function renderChristmasDishes(dishes) {
+  const dishesContainer = document.querySelector(".christmas-dishes-container");
+
+  dishes.forEach((dish) => {
+    const div = document.createElement("div");
+    div.classList.add("christmas-dish");
+    const title = document.createElement("h4");
+    title.classList.add("christmas-dish-title");
+    title.textContent = dish.title;
+    const desc = document.createElement("p");
+    desc.classList.add("christmas-dish-desc");
+    desc.textContent = dish.desc;
+    const image = new Image();
+    image.classList.add("christmas-dish-image");
+    image.src = dish.image;
+    console.log(image);
+
+    div.appendChild(image);
+    div.appendChild(title);
+    div.appendChild(desc);
+
+    dishesContainer.appendChild(div);
+  });
+}

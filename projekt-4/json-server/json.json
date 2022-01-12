@@ -1,0 +1,19 @@
+{
+  "christmasDishes": [
+    {
+      "title": "Bigos",
+      "desc": "Pochodzenie słowa Bigos, wg Andrzeja Bańkowskiego jest niejasne.  Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos), nieco później nazywano tak potrawę z siekanego mięsa. W XVII w. słowo Bigos zaczyna oznaczać takZe posiłek przyrządzony z resztek pozostałych z poprzednich potraw.",
+      "image": "../assets/product-images/bigos.jpeg"
+    },
+    {
+      "title": "Pierogi",
+      "desc": "Pochodzenie słowa Bigos, wg Andrzeja Bańkowskiego jest niejasne.  Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos), nieco później nazywano tak potrawę z siekanego mięsa. W XVII w. słowo Bigos zaczyna oznaczać takZe posiłek przyrządzony z resztek pozostałych z poprzednich potraw.",
+      "image": "../assets/product-images/pierogi-z-kapusta-i-grzybami.jpeg"
+    },
+    {
+      "title": "Barszcz czerwony z uszkami",
+      "desc": "Pochodzenie słowa Bigos, wg Andrzeja Bańkowskiego jest niejasne.  Pierwotnie tego słowa używano do określania sposobu siekania (zsiekać na bigos), nieco później nazywano tak potrawę z siekanego mięsa. W XVII w. słowo Bigos zaczyna oznaczać takZe posiłek przyrządzony z resztek pozostałych z poprzednich potraw.",
+      "image": "../assets/product-images/barszcz-czerwony-z-bezglutenowymi-uszkami-orig.png"
+    }
+  ]
+}

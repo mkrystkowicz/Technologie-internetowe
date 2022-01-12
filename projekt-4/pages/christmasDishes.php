@@ -1,3 +1,1 @@
-<?php
-
-echo "siemka";
+<div class="christmas-dishes-container"></div>

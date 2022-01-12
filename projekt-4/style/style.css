@@ -229,3 +229,33 @@ label {
 .search-result-price {
   font-size: 1rem;
 }
+
+.christmas-dishes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3rem;
+}
+
+.christmas-dish {
+  width: 30%;
+}
+
+.christmas-dish-image {
+  max-width: 100%;
+}
+
+.christmas-dish-title {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.christmas-dish-desc {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1024px) {
+  .christmas-dish-image {
+    max-width: 60%;
+  }
+}
