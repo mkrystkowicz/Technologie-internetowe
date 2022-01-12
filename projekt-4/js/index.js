@@ -44,27 +44,6 @@ const products = [
 const searchInput = document.querySelector(".search-input");
 const searchResults = document.querySelector(".search-results");
 
-products.forEach((el) => {
-  const div = document.createElement("div");
-  const title = document.createElement("p");
-  const price = document.createElement("span");
-
-  title.textContent = el.title;
-  price.textContent = el.price + " zł";
-
-  title.classList.add("search-result-title");
-  price.classList.add("search-result-prize");
-
-  div.appendChild(title);
-  div.appendChild(price);
-  div.classList.add("search-result");
-
-  document.querySelector(".search-results").appendChild(div);
-  div.addEventListener("mousedown", () => {
-    window.location.replace(el.url);
-  });
-});
-
 searchInput.addEventListener("focus", () => {
   document.querySelector(".search-results").classList.add("active");
 });
@@ -76,3 +55,40 @@ searchInput.addEventListener("blur", () => {
 searchResults.addEventListener("mouseover", () => {
   document.querySelector(".search-results").classList.add("active");
 });
+
+searchInput.addEventListener("input", ({ target: { value } }) => {
+  const filteredArray = filteredProducts(value);
+  renderResults(filteredArray);
+});
+
+function renderResults(filteredProducts) {
+  searchResults.textContent = "";
+  filteredProducts.forEach((el) => {
+    const div = document.createElement("div");
+    const title = document.createElement("p");
+    const price = document.createElement("span");
+
+    title.textContent = el.title;
+    price.textContent = el.price + " zł";
+
+    title.classList.add("search-result-title");
+    price.classList.add("search-result-prize");
+
+    div.appendChild(title);
+    div.appendChild(price);
+    div.classList.add("search-result");
+
+    document.querySelector(".search-results").appendChild(div);
+    div.addEventListener("mousedown", () => {
+      window.location.replace(el.url);
+    });
+  });
+}
+
+function filteredProducts(value) {
+  return products.filter((item) =>
+    item.title.toLowerCase().startsWith(value.toLowerCase())
+  );
+}
+
+renderResults(products);
